@@ -110,7 +110,7 @@ Instagram 會在文案後提供兩份完整 prompt：
 
 兩份 prompt 描述同一個視覺，可以直接複製到對應工具。Threads 只有在圖片能補充比較、流程或具體物件時才提供；純觀點貼文不會硬塞配圖。
 
-視覺風格會依文章內容挑選，不是每篇都套同一套：清單型文章走知識圖卡、架構或流程走編輯式圖解、單一主張走大字海報、底層工程走終端機或藍圖風、團隊與流程走插畫場景。不論哪種風格，都會用至少四個顏色、把文章重點寫在圖上，中文一律指定清楚的粗體無襯線字（手寫中文一定糊）。想指定風格，直接在指令裡說明就會照做。ChatGPT Images 2.0 一次最多可產 10 張，且每張可以講不同內容，所以它那份 prompt 預設是一組編號系列：封面一張，之後每個重點各一張。只要一張的話，說一聲就好。
+產圖預設統一使用「手寫混搭數位」知識圖卡：主標題是精確的粗黑體中文，旁邊或下方放一到三句略微傾斜、不規則排列的手寫感英文短語；背景保持簡潔，可深可淺，以至少四個繽紛顏色凸顯手寫與數位字體的對比。文章內容會改變圖中的物件、圖解與版面，但不會再自動換成另一套視覺風格；若你明確指定其他風格，仍會優先照做。ChatGPT Images 2.0 一次最多可產 10 張，且每張可以講不同內容，所以它那份 prompt 預設是一組編號系列：封面一張，之後每個重點各一張。只要一張的話，說一聲就好。
 
 ### 想再指定一點
 
@@ -259,7 +259,7 @@ Instagram adds two complete prompts after the copy:
 
 Both prompts describe the same visual and are ready to paste into the matching tool. Threads adds them only when an image clarifies a comparison, process, or physical subject. It leaves text-first observations alone.
 
-The visual style is chosen per article rather than fixed: a knowledge card for checklists, an editorial diagram for architecture or flow, a typographic poster for a single claim, a terminal or blueprint look for low-level engineering, an illustrated scene for team and process pieces. Whatever the style, the prompt names at least four colors, writes the article's key points on the image, and pins CJK to clean bold sans-serif, since handwritten CJK renders as mush. Name a style yourself and it will follow. ChatGPT Images 2.0 renders up to ten images per prompt and each one can carry different content, so its prompt asks for a numbered series: a cover, then one image per key point. Ask for a single image and it will drop the rest.
+Image prompts now use one default handwritten-digital knowledge-card style: a precise heavy sans-serif Chinese headline, one to three slightly tilted or irregular handwritten English atmosphere phrases beside or below it, a simple dark or light background, and at least four vivid colors that make the typographic contrast the focal point. Article content still determines the objects, diagrams, and layout, but no longer switches the visual style automatically. An explicitly requested style still takes priority. ChatGPT Images 2.0 renders up to ten images per prompt and each one can carry different content, so its prompt asks for a numbered series: a cover, then one image per key point. Ask for a single image and it will drop the rest.
 
 ### Want more control
 

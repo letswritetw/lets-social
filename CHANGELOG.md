@@ -8,6 +8,12 @@
 
 版本號遵循 [Semantic Versioning](https://semver.org/lang/zh-TW/)。
 
+### [未發布]
+
+#### 變更
+
+- 產圖預設統一改為「手寫混搭數位」知識圖卡：精確粗黑體中文主標、旁邊或下方略微傾斜或不規則排列的手寫感英文短語、簡潔的深色或淺色背景，以及至少四個繽紛顏色；不再依文章類型自動切換視覺風格。
+
 ### [1.0.0] - 2026-09-01
 
 #### 新增
@@ -34,6 +40,12 @@
 All notable changes to `lets-social` are documented in this file.
 
 The project follows [Semantic Versioning](https://semver.org/).
+
+### [Unreleased]
+
+#### Changed
+
+- Standardized image prompts on a handwritten-digital knowledge-card style: a precise heavy sans-serif Chinese headline, slightly tilted or irregular handwritten English accents beside or below it, a simple dark or light background, and at least four vivid colors. Prompts no longer switch visual styles automatically by article type.
 
 ### [1.0.0] - 2026-09-01
 

@@ -13,7 +13,7 @@ If the user names other image models, provide one standalone prompt per named mo
 Keep the brief internal. Define:
 
 - The image's job in that platform post
-- The chosen style direction and one line on why the source calls for it
+- How the source-grounded subject and supporting elements fit the default handwritten-digital knowledge-card style
 - Main subject and supporting elements grounded in the source
 - Composition and platform format
 - Visual style, palette, lighting, and mood
@@ -31,32 +31,35 @@ The Instagram and Threads briefs may differ because each post can use a differen
 - Do not imitate a named living artist. Describe the visual qualities instead.
 - On-image text is required by default and must be quoted exactly in the prompt. Every word must be supported by the source. Request that the model render only those exact strings and no other lettering.
 
-## Choose a visual style that fits the source
+## Default visual style: handwritten-digital knowledge card
 
-Do not reuse one house style for every article. Pick the style direction from what the source actually is, name it in the Image Brief with one line on why it fits, and apply it consistently across both provider prompts and every image in a series.
+Unless the user explicitly requests another style, do not select a different style from the source. Use this house direction for every image. In a Chinese provider prompt, include this paragraph verbatim:
 
-If the user names a style, that wins. Otherwise choose from directions like these, or describe a better one the source suggests:
+> 請使用「手寫混搭數位」的風格設計知識圖卡。主標題使用精確的粗黑體中文，旁邊或下方搭配手寫感的英文短語作為氛圍裝飾。手寫字可以稍微傾斜或不規則排列，與工整的黑體形成溫度上的對比。背景保持簡潔（深色或淺色皆可），讓手寫與數位的混搭成為視覺焦點。色彩繽紛。
 
-- **Handwritten-digital knowledge card** — checklists, evaluation criteria, how-to steps. Clean background, precise heavy sans headline, handwritten English accents, highlighter and marker markup.
-- **Editorial diagram** — architecture, data flow, request lifecycles, before-and-after comparisons. Hand-inked nodes and directional connectors, each node drawn as its own object rather than a repeated box, arrows with wobble and weight.
-- **Bold typographic poster** — one strong opinion or a single counterintuitive claim. Oversized type as the subject, one dominant color field, minimal illustration.
-- **Retro terminal or blueprint** — low-level engineering, tooling, protocols, debugging. Monospaced accents, grid or scanline texture, restrained palette with one bright signal color.
-- **Soft illustrated scene** — team process, career, workflow, decision-making. Rounded figures and objects, warm palette, light narrative staging.
+For prompts in another language, translate the paragraph without weakening these requirements:
 
-Selection cues: a process or comparison wants a diagram; a list of criteria wants a card; a single provocative claim wants a poster; a hands-on engineering piece wants the terminal or blueprint look; a people-and-process piece wants a scene.
+- Design a knowledge card in a handwritten-digital hybrid style.
+- Set the main headline in the source language using precise heavy sans-serif type. For Chinese headlines, explicitly request precise heavy Chinese sans-serif type. Place one to three short handwritten English atmosphere phrases beside or below it.
+- Tilt or irregularly arrange the English handwriting so its warmth contrasts with the orderly Chinese type, without reducing legibility.
+- Keep the background simple, either dark or light, so the typographic contrast remains the focal point.
+- Use a vivid palette of at least four named colors with clear visual roles.
+- Adapt diagrams, objects, and layout to the source, but keep them inside this style instead of switching to another visual direction.
 
-### What holds in every style
+If the user explicitly names another style, their direction wins. Keep all source-integrity and typography constraints that do not conflict with it.
 
-Whatever direction is chosen, every prompt must still specify:
+### Core visual requirements
 
-- A palette of at least four colors used with intent, unless the user asked for a deliberately monochrome look. Say which color does what.
+Every prompt must also specify:
+
+- A vivid palette of at least four colors used with intent. Say which color does what, unless the user explicitly asks for a deliberately monochrome look.
 - The source-grounded key points written on the image, per the next section.
 - Hierarchy: which element reads first, second, and last.
 - Enough texture, markup, or structural detail that the image does not read as a bare stock illustration.
 
 ### Keep the image alive
 
-The default failure mode is a sterile corporate infographic. The style label is not what causes it; specific phrases in the prompt are. Unless the user asks for a restrained, minimal, or formal look:
+The default failure mode is a sterile corporate infographic. A simple background is deliberate, but the foreground still needs colorful type contrast, lively markup, and source-grounded content. Unless the user asks for a restrained, minimal, or formal look:
 
 **Never write these into a prompt:** `flat vector`, `consistent stroke weight`, `generous whitespace`, `clean and minimal`, `calm professional mood`, `simple geometric shapes`, `subtle drop shadow`. Each one instructs the model to strip out personality.
 
@@ -75,10 +78,10 @@ The default failure mode is a sterile corporate infographic. The style label is 
 
 ### Typography rule that keeps text legible
 
-Image models garble handwritten CJK. This rule survives every style:
+Image models garble handwritten CJK. This rule applies to the default style and every user override:
 
-- Every Chinese, Japanese, or Korean string must be requested as clean, precise sans-serif type, bold enough to read at phone size. Never ask for handwritten, brush, calligraphic, or distressed CJK.
-- Decorative or handwritten treatment applies only to short English phrases, two to four words each, and only when the chosen style calls for them.
+- Set the main Chinese headline in precise heavy sans-serif type, bold enough to read at phone size. Set every other Chinese, Japanese, or Korean string in clean, precise sans-serif type. Never ask for handwritten, brush, calligraphic, or distressed CJK.
+- Decorative or handwritten treatment applies only to one to three short English phrases, two to four words each. Place them beside or below the headline and let them tilt slightly or sit in an irregular arrangement.
 - State this split explicitly in both provider prompts. Do not leave the font style implied.
 
 ## On-image key points
@@ -89,7 +92,7 @@ Extract the key points from the source and write them into the prompt as exact s
 - On the cover only — the single image, or image 1 of a series — one line that identifies what is being promoted, set smaller than the headline and placed above it. Use the source's title when it is short enough to render; otherwise use the named subject the article is about (the tool, product, or skill name) or a shortened title that keeps the original meaning, capped at sixteen Chinese characters or eight English words. A Latin name renders far more reliably than a long CJK title. Never repeat this line on the other images in a series — once is identification, every image is a watermark, and each extra string is another chance for the model to garble text.
 - Three to five key-point lines, each up to sixteen characters in Chinese or eight words in English, each mapped to one block or region of the layout.
 - One optional closing takeaway line.
-- One to three short English atmosphere phrases, two to four words each, when the chosen style uses them. They are decoration, so they must stay generic and must not carry a claim.
+- One to three short English atmosphere phrases, two to four words each. They are decoration, so they must stay generic and must not carry a claim.
 - List every string explicitly in the prompt, state where each one goes, and instruct the model to render no other text, no lorem, and no decorative fake lettering.
 - Keep the strings short and few. Image models garble long text, and CJK characters degrade fastest, so fewer and shorter strings produce cleaner output.
 - The strings are claims. They must restate the source, never add numbers, results, or guarantees the source does not state.
@@ -98,7 +101,7 @@ Extract the key points from the source and write them into the prompt as exact s
 
 ### Instagram
 
-Create one 4:5 portrait feed visual by default, in the style chosen for this source. It should stop the scroll and let a reader grasp the caption's key points from the image alone. Colorful and information-rich is the target; keep every string legible at phone size.
+Create one 4:5 portrait feed visual by default in the handwritten-digital knowledge-card style. It should stop the scroll and let a reader grasp the caption's key points from the image alone. Colorful and information-rich is the target; keep every string legible at phone size.
 
 When the output includes an optional carousel outline, the default prompts create the carousel cover. The ChatGPT Images 2.0 prompt renders the cover and the slides as one numbered series, so a carousel outline maps directly onto its images.
 
@@ -106,7 +109,7 @@ When the output includes an optional carousel outline, the default prompts creat
 
 Create an image only when it clarifies or strengthens the selected observation. A decorative image is not enough. Do not reuse the Instagram concept unless the user asks for one cross-platform asset.
 
-Use a format suited to the selected visual. State the aspect ratio in both prompts. Threads visuals use the same style chosen for the source but carry fewer key-point lines, usually two or three.
+Use a format suited to the selected visual. State the aspect ratio in both prompts. Threads visuals use the same handwritten-digital knowledge-card style but carry fewer key-point lines, usually two or three.
 
 ## Copy-ready prompt contract
 
@@ -117,7 +120,7 @@ Each prompt must stand alone and include:
 1. The image to create and its communication goal
 2. Aspect ratio, composition, and focal hierarchy
 3. Subject, setting, and source-grounded supporting details
-4. The chosen style, palette, and mood, including the named colors and the font split between clean sans CJK and any decorative English
+4. The handwritten-digital knowledge-card style, simple dark or light background, vivid palette, and mood, including the named colors and the font split between a precise heavy sans-serif headline in the source language and decorative handwritten English
 5. Every exact on-image string with its placement, plus exclusions
 
 Replace every variable with actual content. Do not use brackets, placeholders, "same as above," or instructions that depend on the article being visible to the image model.
@@ -132,7 +135,7 @@ ChatGPT Images 2.0 returns up to ten images from one prompt, and each image can 
 - Each following image covers one key point, with its own on-image strings, its own supporting visual, and its own accent color from the shared palette.
 - An optional final image carries the takeaway or the call to read the article.
 - Default to the cover plus three to five key points, so four to six images. Follow the carousel outline instead when the Instagram output includes one. Never request more than ten.
-- Lock the chosen style across the series: same background, same palette, same font rule, same visual vocabulary, so the images read as one set. Only the content changes.
+- Lock the handwritten-digital knowledge-card style across the series: same background, same palette, same font rule, same visual vocabulary, so the images read as one set. Only the content changes.
 - List every image by number, and under each number list its exact on-image strings. Every string is still bound by the source-integrity rules, so a series must not stretch the article into points it does not make.
 - Nano Banana 2 keeps its single-image prompt and matches image 1.
 
@@ -144,5 +147,5 @@ If the user asks for a single ChatGPT image, request image 1 alone and drop the 
 - Both prompts would create recognizably equivalent images. For a series, the comparison is the ChatGPT cover image.
 - The visual supports its platform post instead of summarizing the whole article.
 - No prompt asks the model to fabricate proof, interface details, or unreadable decorative text.
-- The prompt names the chosen style, at least four colors, its structural or textural detail, the CJK font rule, and every on-image string verbatim.
+- The prompt includes the handwritten-digital knowledge-card direction, a simple dark or light background, at least four vivid colors, its structural or textural detail, the CJK/English font split, and every on-image string verbatim.
 - Every on-image string is short enough to render cleanly and is supported by the source.

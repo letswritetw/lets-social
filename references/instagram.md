@@ -13,7 +13,7 @@ Earn attention quickly on a mobile screen, then show what practical value the ar
 3. Select the details that help a reader decide whether the article is relevant. For technical content, emphasize the problem it helps the reader evaluate or solve.
 4. Use a natural CTA tied to the article. Mention a link location only when the user supplied or confirmed it.
 5. Add a small set of specific hashtags only when they improve discovery. Omit them when they add no clear value.
-6. Add one source-grounded image direction plus copy-ready prompts for Nano Banana 2 and ChatGPT Images 2.0, in a visual style chosen for this source, with the key points written on the image. Omit them when the user requests text only.
+6. Add one source-grounded image direction plus copy-ready prompts for Nano Banana 2 and ChatGPT Images 2.0, in the default handwritten-digital knowledge-card style unless the user explicitly overrides it, with the key points written on the image. Omit them when the user requests text only.
 
 Emoji are optional. Use them as navigation or tone, not decoration. Respect `no emoji`, `no hashtag`, audience, length, and voice overrides.
 
@@ -43,4 +43,4 @@ Unless the user asks for prompts for every slide, the image prompts create the c
 - Hashtags and emoji can each be defended or removed.
 - The image direction supports the caption's selected angle.
 - Both prompts are standalone, source-grounded, and describe the same visual.
-- Both prompts name the same chosen style, at least four colors, the CJK font rule, and every on-image string verbatim.
+- Both prompts use the same handwritten-digital knowledge-card style, at least four vivid colors, the precise heavy sans-serif source-language headline/handwritten English split, and every on-image string verbatim.
