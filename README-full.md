@@ -12,7 +12,7 @@
 
 ### lets-social 是什麼？
 
-`lets-social` 是純指令型 Agent Skill。你可以提供已完成的文章、Markdown、純文字、本機檔案，或 Agent 能讀取的網址。它會先建立一份內部 Source Brief，再針對每個指定平台獨立撰寫內容。Instagram 預設會附上 Nano Banana 2 與 ChatGPT Images 2.0 的可直接使用 prompt；Threads 只在圖片能補充內容時提供。
+`lets-social` 是純指令型 Agent Skill。你可以提供已完成的文章、Markdown、純文字、本機檔案，或 Agent 能讀取的網址。它會先建立一份內部 Source Brief，再針對每個指定平台獨立撰寫內容。Instagram 預設會附上 Nano Banana 2 與 ChatGPT Images 2.5 的可直接使用 prompt；Threads 只在圖片能補充內容時提供。
 
 它不負責發佈、排程，也不替來源補上未經證實的資料。所有輸出都必須保留原文的事實、不確定性、立場與作者語氣。
 
@@ -274,7 +274,7 @@ Instagram 不要產圖 prompt；Threads 這篇要一張配圖。
 
 ### 產圖 prompt
 
-Instagram 預設在文案後輸出 `Image Direction`、`Nano Banana 2 Prompt` 與 `ChatGPT Images 2.0 Prompt`。兩份 prompt 都是完整內容，可以分別貼進 Gemini 與 ChatGPT，不需要再補文章背景。
+Instagram 預設在文案後輸出 `Image Direction`、`Nano Banana 2 Prompt` 與 `ChatGPT Images 2.5 Prompt`。兩份 prompt 都是完整內容，可以分別貼進 Gemini 與 ChatGPT，不需要再補文章背景。
 
 Threads 只有在圖片能說明比較、流程、具體物件、空間關係或文章支持的視覺概念時才輸出這三個欄位。純觀點與討論型貼文會保留文字形式。使用者可以明確要求加入或省略圖片 prompt。
 
@@ -316,7 +316,7 @@ Threads 只有在圖片能說明比較、流程、具體物件、空間關係或
 
 Nano Banana 2 維持單張，對應 Instagram 的 4:5 封面。
 
-ChatGPT Images 2.0 一次最多可產 10 張，且每張可以承載不同內容，所以它那份 prompt 是一組編號系列：第 1 張是封面，之後每個重點各一張，可選最後一張放結語或導讀 CTA。預設為封面加三到五個重點，也就是四到六張；輸出含 Carousel 大綱時改以大綱為準。整組共用同一個背景、色盤、字體規則與視覺語彙，只有內容改變。需要單張時，只取第 1 張。
+ChatGPT Images 2.5 一次最多可產 10 張，且每張可以承載不同內容，所以它那份 prompt 是一組編號系列：第 1 張是封面，之後每個重點各一張，可選最後一張放結語或導讀 CTA。預設為封面加三到五個重點，也就是四到六張；輸出含 Carousel 大綱時改以大綱為準。整組共用同一個背景、色盤、字體規則與視覺語彙，只有內容改變。需要單張時，只取第 1 張。
 
 Skill 只撰寫 prompt，不會連線到 Gemini 或 ChatGPT。實際產圖功能與費用依使用者的帳號方案而定。
 
@@ -417,7 +417,7 @@ This is the full documentation. For a quick start, see the [short README](README
 
 ### What is lets-social?
 
-`lets-social` is an instruction-only Agent Skill. Give it a completed article, Markdown, plain text, a readable local file, or a URL the agent can access. It builds one internal Source Brief, then writes each requested platform independently. Instagram includes copy-ready prompts for Nano Banana 2 and ChatGPT Images 2.0 by default. Threads includes them only when a visual supports the post.
+`lets-social` is an instruction-only Agent Skill. Give it a completed article, Markdown, plain text, a readable local file, or a URL the agent can access. It builds one internal Source Brief, then writes each requested platform independently. Instagram includes copy-ready prompts for Nano Banana 2 and ChatGPT Images 2.5 by default. Threads includes them only when a visual supports the post.
 
 It does not publish, schedule, or research claims for you. It preserves the source's facts, uncertainty, stance, and author voice.
 
@@ -682,7 +682,7 @@ Shared behavior lives in [brand voice](references/brand-voice.md), [image prompt
 
 ### Image prompts
 
-Instagram appends `Image Direction`, `Nano Banana 2 Prompt`, and `ChatGPT Images 2.0 Prompt` after the post copy by default. Each model prompt contains the full context needed for the user to paste it into Gemini or ChatGPT.
+Instagram appends `Image Direction`, `Nano Banana 2 Prompt`, and `ChatGPT Images 2.5 Prompt` after the post copy by default. Each model prompt contains the full context needed for the user to paste it into Gemini or ChatGPT.
 
 Threads adds the three fields only when an image clarifies a comparison, process, physical subject, spatial relationship, or source-grounded visual concept. Text-first observations and discussion prompts stay text only. The user can request or suppress image prompts.
 
@@ -724,7 +724,7 @@ Every Chinese, Japanese, and Korean string is requested as clean, precise, bold 
 
 Nano Banana 2 stays single-image and matches the Instagram 4:5 cover.
 
-ChatGPT Images 2.0 returns up to ten images from one prompt and each can carry different content, so its prompt describes a numbered series: image 1 is the cover, each following image covers one key point, and an optional final image carries the takeaway or the call to read. The default is a cover plus three to five key points, so four to six images; when the Instagram output includes a carousel outline, the series follows that outline instead. The whole set shares one background, palette, font rule, and visual vocabulary, so only the content changes. Ask for a single image and only image 1 is requested.
+ChatGPT Images 2.5 returns up to ten images from one prompt and each can carry different content, so its prompt describes a numbered series: image 1 is the cover, each following image covers one key point, and an optional final image carries the takeaway or the call to read. The default is a cover plus three to five key points, so four to six images; when the Instagram output includes a carousel outline, the series follows that outline instead. The whole set shares one background, palette, font rule, and visual vocabulary, so only the content changes. Ask for a single image and only image 1 is requested.
 
 The skill writes prompts and does not connect to Gemini or ChatGPT. Image availability and cost depend on the user's account plan.
 

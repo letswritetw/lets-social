@@ -28,7 +28,7 @@ Use a thread for a source-grounded sequence such as steps, trade-offs, or a deve
 - `Thread`, only when justified; omit `Post` when the thread is the selected form
 - `Image Direction`, only when justified
 - `Nano Banana 2 Prompt`, only when justified
-- `ChatGPT Images 2.0 Prompt`, only when justified
+- `ChatGPT Images 2.5 Prompt`, only when justified
 
 ## Pre-flight
 

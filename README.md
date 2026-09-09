@@ -106,11 +106,11 @@ Skill 本身不用套件或 API key。若要使用產圖 prompt，請自行開�
 Instagram 會在文案後提供兩份完整 prompt：
 
 - Nano Banana 2
-- ChatGPT Images 2.0
+- ChatGPT Images 2.5
 
 兩份 prompt 描述同一個視覺，可以直接複製到對應工具。Threads 只有在圖片能補充比較、流程或具體物件時才提供；純觀點貼文不會硬塞配圖。
 
-產圖預設統一使用「手寫混搭數位」知識圖卡：主標題是精確的粗黑體中文，旁邊或下方放一到三句略微傾斜、不規則排列的手寫感英文短語；背景保持簡潔，可深可淺，以至少四個繽紛顏色凸顯手寫與數位字體的對比。文章內容會改變圖中的物件、圖解與版面，但不會再自動換成另一套視覺風格；若你明確指定其他風格，仍會優先照做。ChatGPT Images 2.0 一次最多可產 10 張，且每張可以講不同內容，所以它那份 prompt 預設是一組編號系列：封面一張，之後每個重點各一張。只要一張的話，說一聲就好。
+產圖預設統一使用「手寫混搭數位」知識圖卡：主標題是精確的粗黑體中文，旁邊或下方放一到三句略微傾斜、不規則排列的手寫感英文短語；背景保持簡潔，可深可淺，以至少四個繽紛顏色凸顯手寫與數位字體的對比。文章內容會改變圖中的物件、圖解與版面，但不會再自動換成另一套視覺風格；若你明確指定其他風格，仍會優先照做。ChatGPT Images 2.5 一次最多可產 10 張，且每張可以講不同內容，所以它那份 prompt 預設是一組編號系列：封面一張，之後每個重點各一張。只要一張的話，說一聲就好。
 
 ### 想再指定一點
 
@@ -255,11 +255,11 @@ That is it.
 Instagram adds two complete prompts after the copy:
 
 - Nano Banana 2
-- ChatGPT Images 2.0
+- ChatGPT Images 2.5
 
 Both prompts describe the same visual and are ready to paste into the matching tool. Threads adds them only when an image clarifies a comparison, process, or physical subject. It leaves text-first observations alone.
 
-Image prompts now use one default handwritten-digital knowledge-card style: a precise heavy sans-serif Chinese headline, one to three slightly tilted or irregular handwritten English atmosphere phrases beside or below it, a simple dark or light background, and at least four vivid colors that make the typographic contrast the focal point. Article content still determines the objects, diagrams, and layout, but no longer switches the visual style automatically. An explicitly requested style still takes priority. ChatGPT Images 2.0 renders up to ten images per prompt and each one can carry different content, so its prompt asks for a numbered series: a cover, then one image per key point. Ask for a single image and it will drop the rest.
+Image prompts now use one default handwritten-digital knowledge-card style: a precise heavy sans-serif Chinese headline, one to three slightly tilted or irregular handwritten English atmosphere phrases beside or below it, a simple dark or light background, and at least four vivid colors that make the typographic contrast the focal point. Article content still determines the objects, diagrams, and layout, but no longer switches the visual style automatically. An explicitly requested style still takes priority. ChatGPT Images 2.5 renders up to ten images per prompt and each one can carry different content, so its prompt asks for a numbered series: a cover, then one image per key point. Ask for a single image and it will drop the rest.
 
 ### Want more control
 

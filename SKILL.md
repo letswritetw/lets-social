@@ -140,7 +140,7 @@ Before responding, verify:
 - Instagram image fields are present unless the user opted out; Threads image fields appear only when media has a clear job.
 - Every depicted fact maps to the source. Creative style choices do not imply new facts.
 - Both provider prompts follow the same platform Image Brief and contain no placeholders or references to missing context.
-- The ChatGPT Images 2.0 prompt asks for a numbered series where each image covers different content, four to six images by default and never more than ten; the Nano Banana 2 prompt stays single-image and matches the cover.
+- The ChatGPT Images 2.5 prompt asks for a numbered series where each image covers different content, four to six images by default and never more than ten; the Nano Banana 2 prompt stays single-image and matches the cover.
 - Any on-image text is source-grounded, quoted exactly in the prompt, and limited to wording the image model should render.
 - Each prompt uses the handwritten-digital knowledge-card style unless the user explicitly overrides it: a precise heavy sans-serif headline in the source language, slightly tilted or irregular handwritten English accents beside or below it, a simple dark or light background, at least four vivid named colors, and source-grounded key points written on the image. For Chinese headlines, explicitly request precise heavy Chinese sans-serif type.
 

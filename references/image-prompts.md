@@ -4,7 +4,7 @@ Use this reference only when producing image direction and copy-ready prompts fo
 
 ## Goal
 
-Give the user a source-grounded visual concept they can paste into Nano Banana 2 or ChatGPT Images 2.0. The skill writes prompts; it does not call either service or create an image.
+Give the user a source-grounded visual concept they can paste into Nano Banana 2 or ChatGPT Images 2.5. The skill writes prompts; it does not call either service or create an image.
 
 If the user names other image models, provide one standalone prompt per named model. Keep the two defaults above when the user does not name a model.
 
@@ -103,7 +103,7 @@ Extract the key points from the source and write them into the prompt as exact s
 
 Create one 4:5 portrait feed visual by default in the handwritten-digital knowledge-card style. It should stop the scroll and let a reader grasp the caption's key points from the image alone. Colorful and information-rich is the target; keep every string legible at phone size.
 
-When the output includes an optional carousel outline, the default prompts create the carousel cover. The ChatGPT Images 2.0 prompt renders the cover and the slides as one numbered series, so a carousel outline maps directly onto its images.
+When the output includes an optional carousel outline, the default prompts create the carousel cover. The ChatGPT Images 2.5 prompt renders the cover and the slides as one numbered series, so a carousel outline maps directly onto its images.
 
 ### Threads
 
@@ -125,11 +125,11 @@ Each prompt must stand alone and include:
 
 Replace every variable with actual content. Do not use brackets, placeholders, "same as above," or instructions that depend on the article being visible to the image model.
 
-The Nano Banana 2 and ChatGPT Images 2.0 prompts may phrase instructions differently, but they must not change the subject, claim, on-image text, or composition.
+The Nano Banana 2 and ChatGPT Images 2.5 prompts may phrase instructions differently, but they must not change the subject, claim, on-image text, or composition.
 
-### ChatGPT Images 2.0 renders a series
+### ChatGPT Images 2.5 renders a series
 
-ChatGPT Images 2.0 returns up to ten images from one prompt, and each image can carry different content. Its prompt therefore describes a numbered series that walks through the article, not repeated takes on one card.
+ChatGPT Images 2.5 returns up to ten images from one prompt, and each image can carry different content. Its prompt therefore describes a numbered series that walks through the article, not repeated takes on one card.
 
 - Image 1 is the cover: the headline, the hook, and the strongest visual element.
 - Each following image covers one key point, with its own on-image strings, its own supporting visual, and its own accent color from the shared palette.

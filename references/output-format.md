@@ -35,7 +35,7 @@ Omit optional sections that add no value. Do not print empty headings, internal 
 ...
 ```
 
-### ChatGPT Images 2.0 Prompt
+### ChatGPT Images 2.5 Prompt
 
 ```text
 ...
@@ -86,7 +86,7 @@ When an image materially supports the Threads angle, append all three image fiel
 ...
 ```
 
-### ChatGPT Images 2.0 Prompt
+### ChatGPT Images 2.5 Prompt
 
 ```text
 ...

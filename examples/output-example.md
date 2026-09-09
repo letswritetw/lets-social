@@ -51,7 +51,7 @@ Web Bluetooth 的可行性，不能只靠文件判斷。用目標瀏覽器、作
 不要出現任何 Logo、品牌名稱、真實產品畫面、統計圖表、百分比、認證標章，也不要暗示 Web Bluetooth 已保證支援或連線一定成功。
 ```
 
-### ChatGPT Images 2.0 Prompt
+### ChatGPT Images 2.5 Prompt
 
 ```text
 請使用「手寫混搭數位」的風格，一次產生 5 張 4:5 直式知識圖卡，宣傳一篇說明如何評估 Web Bluetooth 的技術文章。這 5 張是一組系列，每張講不同內容，編號 1 到 5。
